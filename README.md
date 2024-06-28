@@ -1,4 +1,4 @@
-# Projeto para fauldade em react
+# Projeto para faculdade em React
 
 ![Projeto Faculdade](https://github.com/SandroCardosoJr/personal-portfolio/assets/125503269/e95394e5-c36a-45cb-80a5-5777f0e898e7)
 Esse seria o prototipo do projeto!
