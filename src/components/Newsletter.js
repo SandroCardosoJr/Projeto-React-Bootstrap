@@ -30,7 +30,7 @@ export const Newsletter = ({ status, message, onValidated }) => {
               Assine nosso boletim informativo e nunca perca as últimas
               atualizações
             </h3>
-            {status === "sending" && <Alert>Sending...</Alert>}
+            {status === "sending" && <Alert>Enviando...</Alert>}
             {status === "error" && <Alert variant="danger">{message}</Alert>}
             {status === "success" && <Alert variant="success">{message}</Alert>}
           </Col>
@@ -41,7 +41,7 @@ export const Newsletter = ({ status, message, onValidated }) => {
                   value={email}
                   type="email"
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Emailh"
+                  placeholder="Email"
                 />
                 <button type="submit">Enviar</button>
               </div>

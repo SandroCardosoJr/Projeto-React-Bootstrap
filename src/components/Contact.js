@@ -25,7 +25,7 @@ export const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setButtonText("Sending...");
+    setButtonText("Enviando...");
     let response = await fetch("http://localhost:5000/contact", {
       method: "POST",
       headers: {
@@ -37,11 +37,11 @@ export const Contact = () => {
     let result = await response.json();
     setFormDetails(formInitialDetails);
     if (result.code == 200) {
-      setStatus({ succes: true, message: "Message sent successfully" });
+      setStatus({ succes: true, message: "Mensagem enviada com sucesso." });
     } else {
       setStatus({
         succes: false,
-        message: "Something went wrong, please try again later.",
+        message: "Alguma coisa de errado aconteceu, tente novamente mais tarde.",
       });
     }
   };
@@ -58,7 +58,7 @@ export const Contact = () => {
                     isVisible ? "animate__animated animate__zoomIn" : ""
                   }
                   src={contactImg}
-                  alt="Contact Us"
+                  alt="Contacte-nos"
                 />
               )}
             </TrackVisibility>
@@ -71,7 +71,7 @@ export const Contact = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <h2>Get In Touch</h2>
+                  <h2>Entre em contato</h2>
                   <form onSubmit={handleSubmit}>
                     <Row>
                       <Col size={12} sm={6} className="px-1">

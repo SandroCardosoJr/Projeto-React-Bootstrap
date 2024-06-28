@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"];
+  const toRotate = ["Explore esse espaço", "de aprendizado", "e encontre novas conexões"];
   const period = 2000;
 
   useEffect(() => {
@@ -76,8 +76,8 @@ export const Banner = () => {
                   </h1>
                   <p>
                     Aqui no Space Connect você irá se conectar a empresas,
-                    pessoas, fazer avaliações, testes, se candidatar a vagas, se
-                    desenvolver para virar o melhor profissional possível.
+                    pessoas, fazer avaliações, testes, se candidatar a vagas e
+                    desenvolver habilidades para se tornar o melhor profissional possível.
                   </p>
                   <button onClick={() => console.log("connect")}>
                     Se Conectar <ArrowRightCircle size={25} />
